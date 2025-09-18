@@ -2,6 +2,7 @@ import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import { gsap, ScrollTrigger } from '../../lib/gsap-config'
 import siteConfig from '../../config/site.config.json'
+import { type Feature } from '../../types/config'
 import * as LucideIcons from 'lucide-react'
 
 export const Features = () => {
@@ -52,8 +53,8 @@ export const Features = () => {
   }
 
   // Split features into highlighted and regular
-  const highlightedFeatures = siteConfig.features.filter((f: any) => f.highlight)
-  const regularFeatures = siteConfig.features.filter((f: any) => !f.highlight)
+  const highlightedFeatures = siteConfig.features.filter((f: Feature) => f.highlight)
+  const regularFeatures = siteConfig.features.filter((f: Feature) => !f.highlight)
 
   return (
     <section ref={sectionRef} id="features" className="section-padding bg-noir-pure relative overflow-hidden">
@@ -79,7 +80,7 @@ export const Features = () => {
         <div ref={gridRef} className="space-y-32">
           {/* Highlighted features - Large editorial cards */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
-            {highlightedFeatures.map((feature: any, index: number) => {
+            {highlightedFeatures.map((feature: Feature, index: number) => {
               const IconComponent = getIcon(feature.icon)
               const isEven = index % 2 === 0
 
@@ -131,7 +132,7 @@ export const Features = () => {
           {/* Regular features - Smaller grid */}
           <div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {regularFeatures.map((feature: any, index: number) => {
+              {regularFeatures.map((feature: Feature) => {
                 const IconComponent = getIcon(feature.icon)
 
                 return (

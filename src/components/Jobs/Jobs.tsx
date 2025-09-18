@@ -3,6 +3,7 @@ import { useGSAP } from '@gsap/react'
 import { gsap, ScrollTrigger } from '../../lib/gsap-config'
 import { Briefcase, DollarSign, Users, ArrowRight } from 'lucide-react'
 import siteConfig from '../../config/site.config.json'
+import { type Job } from '../../types/config'
 
 export const Jobs = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
@@ -114,7 +115,7 @@ export const Jobs = () => {
 
         {/* Jobs Grid - Clean career cards */}
         <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredJobs.map((job: any, index: number) => {
+          {filteredJobs.map((job: Job) => {
             const category = siteConfig.jobs.categories.find(c => c.id === job.category)
             const isLegal = category?.legal !== false
 
@@ -237,7 +238,7 @@ export const Jobs = () => {
             <div className="text-center">
               <DollarSign className="w-8 h-8 text-accent-gold mx-auto mb-3" />
               <p className="font-mono text-3xl text-blanc-pure mb-1">
-                ${Math.min(...siteConfig.jobs.list.map((j: any) => j.salary || 0))}-${Math.max(...siteConfig.jobs.list.map((j: any) => j.salary || 0))}
+                ${Math.min(...siteConfig.jobs.list.map((j: Job) => j.salary || 0))}-${Math.max(...siteConfig.jobs.list.map((j: Job) => j.salary || 0))}
               </p>
               <p className="font-body text-xs uppercase tracking-wider text-blanc-pearl/60">
                 {siteConfig.ui?.jobs?.salaryRangeLabel || 'Salary Range'}

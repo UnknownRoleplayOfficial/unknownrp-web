@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useMemo } from 'react'
 import { useLocation } from 'react-router-dom'
 import { Menu, X, Copy, Check, Circle } from 'lucide-react'
 import { gsap } from '../../lib/gsap-config'
@@ -13,7 +13,10 @@ export const Navigation = () => {
   const navRef = useRef<HTMLElement>(null)
   const menuRef = useRef<HTMLDivElement>(null)
 
-  const menuItems = siteConfig.ui?.navigation?.menuItems || ['Features', 'Jobs', 'Rules', 'Team', 'Gallery']
+  const menuItems = useMemo(
+    () => siteConfig.ui?.navigation?.menuItems || ['Features', 'Jobs', 'Rules', 'Team', 'Gallery'],
+    []
+  )
 
   useEffect(() => {
     const handleScroll = () => {

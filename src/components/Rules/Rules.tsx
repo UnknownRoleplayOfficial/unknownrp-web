@@ -1,8 +1,9 @@
 import { useRef, useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import { gsap, ScrollTrigger } from '../../lib/gsap-config'
-import { AlertCircle, Info, AlertTriangle, ChevronRight } from 'lucide-react'
+import { AlertCircle, Info, AlertTriangle } from 'lucide-react'
 import siteConfig from '../../config/site.config.json'
+import { type Rule } from '../../types/config'
 
 export const Rules = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('all')
@@ -10,12 +11,15 @@ export const Rules = () => {
   const titleRef = useRef<HTMLDivElement>(null)
   const rulesRef = useRef<HTMLDivElement>(null)
 
+  // Cast rules to proper type
+  const rules = siteConfig.rules as Rule[]
+
   // Get unique categories from rules
-  const categories = ['all', ...Array.from(new Set(siteConfig.rules.map((r: any) => r.category)))]
+  const categories = ['all', ...Array.from(new Set(rules.map((r) => r.category)))]
 
   const filteredRules = selectedCategory === 'all'
-    ? siteConfig.rules
-    : siteConfig.rules.filter((rule: any) => rule.category === selectedCategory)
+    ? rules
+    : rules.filter((rule) => rule.category === selectedCategory)
 
   const getSeverityIcon = (severity: string) => {
     switch (severity) {
@@ -76,9 +80,9 @@ export const Rules = () => {
   }, [selectedCategory])
 
   // Group rules by severity
-  const highPriorityRules = filteredRules.filter((r: any) => r.severity === 'high')
-  const mediumPriorityRules = filteredRules.filter((r: any) => r.severity === 'medium')
-  const lowPriorityRules = filteredRules.filter((r: any) => r.severity === 'low')
+  const highPriorityRules = filteredRules.filter((r) => r.severity === 'high')
+  const mediumPriorityRules = filteredRules.filter((r) => r.severity === 'medium')
+  const lowPriorityRules = filteredRules.filter((r) => r.severity === 'low')
 
   return (
     <section ref={containerRef} id="rules" className="section-padding bg-noir-pure relative overflow-hidden">
@@ -144,7 +148,7 @@ export const Rules = () => {
               </div>
 
               <div className="grid gap-4">
-                {highPriorityRules.map((rule: any, index: number) => (
+                {highPriorityRules.map((rule) => (
                   <article
                     key={rule.id}
                     className="rule-item group"
@@ -198,7 +202,7 @@ export const Rules = () => {
               </div>
 
               <div className="grid gap-4">
-                {mediumPriorityRules.map((rule: any, index: number) => (
+                {mediumPriorityRules.map((rule) => (
                   <article
                     key={rule.id}
                     className="rule-item group"
@@ -252,7 +256,7 @@ export const Rules = () => {
               </div>
 
               <div className="grid gap-4">
-                {lowPriorityRules.map((rule: any, index: number) => (
+                {lowPriorityRules.map((rule) => (
                   <article
                     key={rule.id}
                     className="rule-item group"

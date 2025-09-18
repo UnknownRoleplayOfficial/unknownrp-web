@@ -2,7 +2,8 @@ import { useRef } from 'react'
 import { useGSAP } from '@gsap/react'
 import { gsap, ScrollTrigger } from '../../lib/gsap-config'
 import siteConfig from '../../config/site.config.json'
-import { Shield, Crown, Wrench, Users, Hash, AtSign } from 'lucide-react'
+import { type TeamMember } from '../../types/config'
+import { Shield, Crown, Wrench, Users, AtSign } from 'lucide-react'
 
 export const Team = () => {
   const sectionRef = useRef<HTMLElement>(null)
@@ -61,8 +62,9 @@ export const Team = () => {
     return 'text-accent-success border-accent-success/20'
   }
 
-  // Sort team by role importance
-  const sortedTeam = [...siteConfig.team].sort((a, b) => {
+  // Cast team to proper type and sort by role importance
+  const team = siteConfig.team as TeamMember[]
+  const sortedTeam = [...team].sort((a, b) => {
     const roleOrder = ['owner', 'admin', 'dev', 'mod']
     const aIndex = roleOrder.findIndex(r => a.role.toLowerCase().includes(r))
     const bIndex = roleOrder.findIndex(r => b.role.toLowerCase().includes(r))
@@ -97,7 +99,7 @@ export const Team = () => {
 
         {/* Team Grid - Professional Agency Style */}
         <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {sortedTeam.map((member: any, index: number) => {
+          {sortedTeam.map((member) => {
             const RoleIcon = getRoleIcon(member.role)
             const isActive = member.status === 'active'
 

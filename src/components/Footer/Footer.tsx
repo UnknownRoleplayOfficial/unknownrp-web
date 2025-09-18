@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import siteConfig from '../../config/site.config.json'
 import {
   Github, Twitter, Youtube, Instagram, Twitch,
-  MapPin, Users, Building, Circle, ExternalLink
+  Circle, ExternalLink
 } from 'lucide-react'
 
 // Discord icon as component since lucide doesn't have it

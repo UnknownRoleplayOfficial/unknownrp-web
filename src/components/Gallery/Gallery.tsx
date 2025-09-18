@@ -2,7 +2,8 @@ import { useRef, useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import { gsap, ScrollTrigger } from '../../lib/gsap-config'
 import siteConfig from '../../config/site.config.json'
-import { X, ChevronLeft, ChevronRight, Maximize2, Grid3x3 } from 'lucide-react'
+import { type GalleryImage, type GalleryCategory } from '../../types/config'
+import { X, ChevronLeft, ChevronRight, Maximize2 } from 'lucide-react'
 
 export const Gallery = () => {
   const sectionRef = useRef<HTMLElement>(null)
@@ -14,11 +15,11 @@ export const Gallery = () => {
 
   const filteredImages = selectedCategory === 'all'
     ? siteConfig.gallery.images
-    : siteConfig.gallery.images.filter((img: any) => img.category === selectedCategory)
+    : siteConfig.gallery.images.filter((img: GalleryImage) => img.category === selectedCategory)
 
   // Group images by featured status
-  const featuredImages = filteredImages.filter((img: any) => img.featured)
-  const regularImages = filteredImages.filter((img: any) => !img.featured)
+  const featuredImages = filteredImages.filter((img: GalleryImage) => img.featured)
+  const regularImages = filteredImages.filter((img: GalleryImage) => !img.featured)
 
   useGSAP(() => {
     // Header animation
@@ -103,10 +104,10 @@ export const Gallery = () => {
           {/* Category tabs - Netflix style */}
           <div className="mb-12">
             <div className="flex gap-8 overflow-x-auto no-scrollbar pb-2">
-              {siteConfig.gallery.categories.map((category: any) => {
+              {siteConfig.gallery.categories.map((category: GalleryCategory) => {
                 const imageCount = category.id === 'all'
                   ? siteConfig.gallery.images.length
-                  : siteConfig.gallery.images.filter((img: any) => img.category === category.id).length
+                  : siteConfig.gallery.images.filter((img: GalleryImage) => img.category === category.id).length
 
                 return (
                   <button
@@ -145,8 +146,8 @@ export const Gallery = () => {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                  {featuredImages.slice(0, 2).map((image: any, index: number) => {
-                    const imageIndex = filteredImages.findIndex((img: any) => img.id === image.id)
+                  {featuredImages.slice(0, 2).map((image: GalleryImage) => {
+                    const imageIndex = filteredImages.findIndex((img: GalleryImage) => img.id === image.id)
 
                     return (
                       <article
@@ -206,8 +207,8 @@ export const Gallery = () => {
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                  {regularImages.map((image: any) => {
-                    const imageIndex = filteredImages.findIndex((img: any) => img.id === image.id)
+                  {regularImages.map((image: GalleryImage) => {
+                    const imageIndex = filteredImages.findIndex((img: GalleryImage) => img.id === image.id)
 
                     return (
                       <article
@@ -286,7 +287,7 @@ export const Gallery = () => {
 
           {/* Thumbnail strip */}
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2">
-            {filteredImages.slice(0, 10).map((img: any, index: number) => (
+            {filteredImages.slice(0, 10).map((img: GalleryImage, index: number) => (
               <button
                 key={img.id}
                 onClick={() => setSelectedImage(index)}
