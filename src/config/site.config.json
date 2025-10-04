@@ -1,7 +1,7 @@
 {
   "seo": {
-    "title": "NightCity Roleplay - Premium GTA V FiveM RP Server",
-    "shortTitle": "NightCity RP",
+    "title": "Unknown RP - Your Story, Your Secrets",
+    "shortTitle": "Unknown RP",
     "description": "Join the most immersive GTA V FiveM roleplay server. Custom framework, active community, realistic economy, and endless roleplay possibilities. Apply for whitelist today!",
     "keywords": [
       "FiveM", 
@@ -16,18 +16,18 @@
     ],
     "ogImage": "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=1200&h=630&fit=crop",
     "twitterCard": "summary_large_image",
-    "twitterHandle": "@nightcityrp",
+    "twitterHandle": "@unknownrp",
     "favicon": "/favicon.ico",
     "themeColor": "#4A7C4E",
     "locale": "en_US",
-    "url": "https://nightcity-rp.com"
+    "url": "https://unknownrp.net"
   },
   "legal": {
-    "companyName": "NightCity Roleplay",
-    "email": "contact@nightcity-rp.com",
-    "privacyEmail": "privacy@nightcity-rp.com",
-    "dpoEmail": "dpo@nightcity-rp.com",
-    "supportEmail": "support@nightcity-rp.com",
+    "companyName": "Unknown Roleplay",
+    "email": "contact@unknown-rp.com",
+    "privacyEmail": "privacy@unknown-rp.com",
+    "dpoEmail": "dpo@unknown-rp.com",
+    "supportEmail": "support@unknown-rp.com",
     "lastUpdated": "2025-01-01",
     "minAge": 18,
     "copyrightYear": 2025,
@@ -40,12 +40,12 @@
     }
   },
   "server": {
-    "name": "NightCity Roleplay",
-    "shortName": "NCRP",
-    "tagline": "Where Legends Are Written",
+    "name": "Unknown Roleplay",
+    "shortName": "UNRP",
+    "tagline": "Your Story, Your Secrets",
     "slogan": "Every Story. Every Choice. Every Moment.",
-    "description": "Experience cinematic storytelling in Los Santos. Shape your narrative, build your empire, and become a legend in the most immersive roleplay environment.",
-    "ip": "play.nightcity-rp.com",
+    "description": "Experience cinematic storytelling in Los Santos. Shape your narrative, build your empire, and uncover the unknown in the most immersive roleplay environment.",
+    "ip": "play.unknownrp.com",
     "port": "30120",
     "discord": "https://discord.gg/fourtwenty",
     "maxPlayers": 256,
@@ -53,7 +53,7 @@
     "language": "English",
     "logo": {
       "type": "text",
-      "content": "NC"
+      "content": "URP"
     },
     "stats": {
       "established": "2024",
@@ -589,7 +589,7 @@
       "role": "Server Owner",
       "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
       "discord": "bigboss",
-      "description": "Founder and visionary leader of NightCity Roleplay",
+      "description": "Founder and visionary leader of Unknown Roleplay",
       "badge": "FOUNDER",
       "status": "active"
     },
@@ -625,23 +625,23 @@
     }
   ],
   "api": {
-    "serverCode": "ymkax5",
+    "serverCode": "w8b5e3",
     "cfxApiUrl": "https://servers-frontend.fivem.net/api/servers/single/",
     "refreshInterval": 30000
   },
   "social": {
     "discord": "https://discord.gg/fourtwenty",
-    "twitter": "https://twitter.com/nightcityrp",
-    "youtube": "https://youtube.com/@nightcityrp",
-    "tiktok": "https://tiktok.com/@nightcityrp",
-    "instagram": "https://instagram.com/nightcityrp",
-    "twitch": "https://twitch.tv/nightcityrp",
+    "twitter": "https://twitter.com/unknownrp",
+    "youtube": "https://youtube.com/@unknownrp",
+    "tiktok": "https://tiktok.com/@unknownrp",
+    "instagram": "https://instagram.com/unknownrp",
+    "twitch": "https://twitch.tv/unknownrp",
     "teamspeak": null,
     "forum": null
   },
   "whitelist": {
     "enabled": true,
-    "applicationUrl": "https://apply.nightcity-rp.com",
+    "applicationUrl": "https://apply.unknown-rp.com",
     "requirements": [
       "Minimum age of 16 years",
       "Working microphone",
@@ -658,37 +658,15 @@
   "donations": {
     "enabled": true,
     "currency": "USD",
-    "paypalUrl": "https://paypal.me/nightcityrp",
-    "packages": [
-      {
-        "id": "supporter",
-        "name": "Street Supporter",
-        "price": 5,
-        "perks": ["Priority Queue", "Supporter Tag", "Extra Outfit Slot"],
-        "popular": false
-      },
-      {
-        "id": "vip",
-        "name": "VIP Status",
-        "price": 15,
-        "perks": ["Priority Queue", "VIP Tag", "Extra Character Slot", "Custom Plate", "VIP Lounge Access"],
-        "popular": true
-      },
-      {
-        "id": "elite",
-        "name": "Elite Gang",
-        "price": 30,
-        "perks": ["Priority Queue", "Elite Tag", "2 Extra Character Slots", "Custom Plate", "Exclusive Vehicles", "Custom Gang Tag"],
-        "popular": false
-      }
-    ]
+    "paypalUrl": "https://paypal.me/unknownrp",
+    "packages": [ ... unchanged ... ]
   },
   "footer": {
     "showNewsletter": false,
     "showSocialLinks": true,
     "showLegalLinks": true,
     "showServerStats": true,
-    "copyright": "© 2025 NightCity Roleplay. All rights reserved.",
+    "copyright": "© 2025 Unknown Roleplay. All rights reserved.",
     "disclaimer": "Not affiliated with Rockstar Games or Take-Two Interactive."
   }
 }
