@@ -24,10 +24,10 @@
   },
   "legal": {
     "companyName": "Unknown Roleplay",
-    "email": "contact@unknown-rp.com",
-    "privacyEmail": "privacy@unknown-rp.com",
-    "dpoEmail": "dpo@unknown-rp.com",
-    "supportEmail": "support@unknown-rp.com",
+    "email": "contact@unknownrp.net",
+    "privacyEmail": "privacy@unknownrp.net",
+    "dpoEmail": "dpo@unknownrp.net",
+    "supportEmail": "support@unknownrp.net",
     "lastUpdated": "2025-01-01",
     "minAge": 18,
     "copyrightYear": 2025,
@@ -45,9 +45,9 @@
     "tagline": "Your Story, Your Secrets",
     "slogan": "Every Story. Every Choice. Every Moment.",
     "description": "Experience cinematic storytelling in Los Santos. Shape your narrative, build your empire, and uncover the unknown in the most immersive roleplay environment.",
-    "ip": "play.unknownrp.com",
+    "ip": "fivem.unknownrp.net",
     "port": "30120",
-    "discord": "https://discord.gg/fourtwenty",
+    "discord": "https://discord.gg/kn8pPznhfd",
     "maxPlayers": 256,
     "location": "Los Santos",
     "language": "English",
@@ -57,8 +57,8 @@
     },
     "stats": {
       "established": "2025",
-      "totalPlayers": "15,000+",
-      "activeGangs": "12",
+      "totalPlayers": "100+",
+      "activeGangs": "3",
       "businesses": "45+"
     },
     "loadingTips": [
@@ -86,7 +86,7 @@
       "sectionTag": "Experience",
       "title": "Server",
       "titleAccent": "Features",
-      "highlight": "256 PLAYERS • CUSTOM FRAMEWORK • CINEMATIC ROLEPLAY"
+      "highlight": "128 PLAYERS • CUSTOM FRAMEWORK • CINEMATIC ROLEPLAY"
     },
     "jobs": {
       "sectionTag": "Careers",
@@ -173,50 +173,64 @@
       "cookies": "Cookies"
     }
   },
-  "features": [
-    {
-      "id": "custom-framework",
-      "title": "Custom Framework",
-      "description": "Proprietary technology designed for seamless, cinematic gameplay experiences",
-      "icon": "Code2",
-      "highlight": true
-    },
-    {
-      "id": "gang-system",
-      "title": "Territory Management",
-      "description": "Strategic control zones with dynamic influence and progression systems",
-      "icon": "Users",
-      "highlight": true
-    },
-    {
-      "id": "economy",
-      "title": "Dynamic Economy",
-      "description": "Complex economic ecosystem with multiple revenue streams and market dynamics",
-      "icon": "DollarSign",
-      "highlight": false
-    },
-    {
-      "id": "housing",
-      "title": "Real Estate Portfolio",
-      "description": "Acquire properties ranging from starter apartments to luxury penthouses",
-      "icon": "Home",
-      "highlight": false
-    },
-    {
-      "id": "vehicles",
-      "title": "300+ Vehicles",
-      "description": "Extensive collection from classic cars to cutting-edge supercars",
-      "icon": "Car",
-      "highlight": false
-    },
-    {
-      "id": "heists",
-      "title": "Heist Operations",
-      "description": "Orchestrate complex operations requiring strategy, timing, and teamwork",
-      "icon": "Lock",
-      "highlight": true
-    }
-  ],
+"features": [
+  {
+    "id": "custom-framework",
+    "title": "QBOX Foundation",
+    "description": "Powered by QBOX — rebuilt and customized by Unknown Studios for peak performance, realism, and creative control across every system.",
+    "icon": "Cpu",
+    "highlight": true
+  },
+  {
+    "id": "onboarding",
+    "title": "Cinematic Onboarding",
+    "description": "Begin your journey with a full cinematic arrival — from the skies above Los Santos to your first steps into the city’s heartbeat.",
+    "icon": "Film",
+    "highlight": true
+  },
+  {
+    "id": "economy",
+    "title": "Living City Economy",
+    "description": "An adaptive financial system where every paycheck, deal, and hustle matters — shaping the opportunities and balance of power in Los Santos.",
+    "icon": "DollarSign",
+    "highlight": false
+  },
+  {
+    "id": "housing",
+    "title": "Evolving Housing System",
+    "description": "From rundown motels to high-rise penthouses — ownership, upgrades, and lifestyle progression tied directly to your character’s journey.",
+    "icon": "Home",
+    "highlight": false
+  },
+  {
+    "id": "vehicles",
+    "title": "Immersive Vehicle Experience",
+    "description": "Custom garage systems, vehicle financing, job fleets, and ownership metadata — your vehicle is part of your story, not just transport.",
+    "icon": "Car",
+    "highlight": false
+  },
+  {
+    "id": "career-paths",
+    "title": "Career Paths & Growth",
+    "description": "Choose your own path — public service, corporate hustle, or underground empire. Reputation and choices define how the city sees you.",
+    "icon": "Briefcase",
+    "highlight": true
+  },
+  {
+    "id": "criminal-network",
+    "title": "Underground Operations",
+    "description": "Dive into an interconnected criminal world — heists, trade, and turf networks powered by custom systems from Unknown Studios.",
+    "icon": "Eye",
+    "highlight": true
+  },
+  {
+    "id": "community-events",
+    "title": "Player-Driven World",
+    "description": "Unknown Roleplay evolves through its community — live events, dynamic storylines, and server lore shaped by player actions.",
+    "icon": "Users",
+    "highlight": false
+  }
+],
   "gallery": {
     "images": [
       { 
@@ -585,7 +599,7 @@
   "team": [
     {
       "id": "mr-digital",
-      "name": "Mr. Digital",
+      "name": "Mr Digital",
       "role": "Server Owner",
       "avatar": "https://files.fivemerr.com/images/7497611d-67ab-4100-b633-9204855c3d81.png",
       "discord": "mrdigtal0",
@@ -593,36 +607,36 @@
       "badge": "FOUNDER",
       "status": "active"
     },
-    {
-      "id": "jane-smith",
-      "name": "Jane 'Control' Smith",
-      "role": "Head Administrator",
-      "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
-      "discord": "control",
-      "description": "Ensuring server integrity and exceptional player experiences",
-      "badge": "ADMIN",
-      "status": "active"
-    },
-    {
-      "id": "mike-wilson",
-      "name": "Mike 'Tech' Wilson",
-      "role": "Lead Developer",
-      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
-      "discord": "techguy",
-      "description": "Lead technical architect creating innovative gameplay systems",
-      "badge": "DEV",
-      "status": "active"
-    },
-    {
-      "id": "sarah-jones",
-      "name": "Sarah 'Peace' Jones",
-      "role": "Senior Moderator",
-      "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
-      "discord": "peacekeeper",
-      "description": "Community liaison and conflict resolution specialist",
-      "badge": "MOD",
-      "status": "active"
-    }
+  {
+    "id": "blaze",
+    "name": "Blaze",
+    "role": "Co-Owner",
+    "avatar": "https://images.unsplash.com/photo-1614283488855-9d6d1d3e34a2?w=400&h=400&fit=crop",
+    "discord": "strightblazing",
+    "description": "Co-Owner providing strategic insight and creative direction to shape the ongoing evolution of Unknown Roleplay.",
+    "badge": "OWNER",
+    "status": "active"
+  },
+  {
+    "id": "adams",
+    "name": "Adams",
+    "role": "Co-Owner / Staff Manager",
+    "avatar": "https://images.unsplash.com/photo-1554151228-14d9def656e4?w=400&h=400&fit=crop",
+    "discord": "adams",
+    "description": "Co-Owner focused on staff operations, team coordination, and community oversight — ensuring quality and structure across the player experience.",
+    "badge": "OWNER",
+    "status": "active"
+  },
+  {
+    "id": "mastermanwah",
+    "name": "MasterManwah",
+    "role": "Assistant Lead Developer",
+    "avatar": "https://images.unsplash.com/photo-1603415526960-f7e0328d92b8?w=400&h=400&fit=crop",
+    "discord": "MasterManwah",
+    "description": "Assistant Lead Developer working closely with the core dev team to expand, optimize, and enhance Unknown Roleplay’s QBOX-based framework.",
+    "badge": "DEV",
+    "status": "active"
+  }
   ],
   "api": {
     "serverCode": "w8b5e3",
@@ -630,7 +644,7 @@
     "refreshInterval": 30000
   },
   "social": {
-    "discord": "https://discord.gg/fourtwenty",
+    "discord": "https://discord.gg/kn8pPznhfd",
     "twitter": "https://twitter.com/unknownrp",
     "youtube": "https://youtube.com/@unknownrp",
     "tiktok": "https://tiktok.com/@unknownrp",
@@ -640,7 +654,7 @@
     "forum": null
   },
   "whitelist": {
-    "enabled": true,
+    "enabled": false,
     "applicationUrl": "https://apply.unknown-rp.com",
     "requirements": [
       "Minimum age of 16 years",
@@ -658,7 +672,7 @@
  "donations": {
   "enabled": true,
   "currency": "USD",
-  "paypalUrl": "https://paypal.me/unknownrp",
+  "paypalUrl": "https://www.venmo.com/u/unknownrp",
   "packages": [
     {
       "id": "supporter",
