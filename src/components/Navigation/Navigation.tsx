@@ -112,15 +112,21 @@ export const Navigation = () => {
               onClick={() => scrollToSection('home')}
               className="flex items-center gap-3 group"
             >
-              {siteConfig.server?.logo?.type === 'text' ? (
-                <span className="font-display text-3xl text-blanc-pure uppercase tracking-wider transition-colors group-hover:text-accent-gold">
-                  {siteConfig.server.logo.content}
-                </span>
-              ) : (
-                <span className="font-display text-2xl text-blanc-pure uppercase tracking-wider transition-colors group-hover:text-accent-gold">
-                  {siteConfig.server?.shortName || 'NCRP'}
-                </span>
-              )}
+        {siteConfig.server?.logo?.type === 'text' ? (
+  <span className="font-display text-3xl text-blanc-pure uppercase tracking-wider transition-colors group-hover:text-accent-gold">
+    {siteConfig.server.logo.content}
+  </span>
+) : siteConfig.server?.logo?.type === 'image' ? (
+  <img
+    src={siteConfig.server.logo.content}
+    alt={siteConfig.server?.name || 'Server Logo'}
+    className="h-10 w-auto object-contain transition-opacity group-hover:opacity-90"
+  />
+) : (
+  <span className="font-display text-2xl text-blanc-pure uppercase tracking-wider transition-colors group-hover:text-accent-gold">
+    {siteConfig.server?.shortName || 'UNRP'}
+  </span>
+)}
             </button>
 
             {/* Desktop Menu */}
