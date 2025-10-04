@@ -52,11 +52,11 @@
     "location": "Los Santos",
     "language": "English",
     "logo": {
-      "type": "text",
-      "content": "URP"
+      "type": "image",
+      "content": "https://files.fivemerr.com/images/1348b57c-62d4-40a6-86b4-7e24f83eb65d.png"
     },
     "stats": {
-      "established": "2024",
+      "established": "2025",
       "totalPlayers": "15,000+",
       "activeGangs": "12",
       "businesses": "45+"
