@@ -655,12 +655,34 @@
       "Welcome to the streets"
     ]
   },
-  "donations": {
-    "enabled": true,
-    "currency": "USD",
-    "paypalUrl": "https://paypal.me/unknownrp",
-    "packages": [ ... unchanged ... ]
-  },
+ "donations": {
+  "enabled": true,
+  "currency": "USD",
+  "paypalUrl": "https://paypal.me/unknownrp",
+  "packages": [
+    {
+      "id": "supporter",
+      "name": "Street Supporter",
+      "price": 5,
+      "perks": ["Priority Queue", "Supporter Tag", "Extra Outfit Slot"],
+      "popular": false
+    },
+    {
+      "id": "vip",
+      "name": "VIP Status",
+      "price": 15,
+      "perks": ["Priority Queue", "VIP Tag", "Extra Character Slot", "Custom Plate", "VIP Lounge Access"],
+      "popular": true
+    },
+    {
+      "id": "elite",
+      "name": "Elite Gang",
+      "price": 30,
+      "perks": ["Priority Queue", "Elite Tag", "2 Extra Character Slots", "Custom Plate", "Exclusive Vehicles", "Custom Gang Tag"],
+      "popular": false
+    }
+  ]
+},
   "footer": {
     "showNewsletter": false,
     "showSocialLinks": true,
