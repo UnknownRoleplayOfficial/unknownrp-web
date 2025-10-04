@@ -599,11 +599,11 @@
   "team": [
     {
       "id": "mr-digital",
-      "name": "Mr Digital",
-      "role": "Server Owner",
+      "name": "Digital",
+      "role": "Server Owner / Lead Developer",
       "avatar": "https://files.fivemerr.com/images/7497611d-67ab-4100-b633-9204855c3d81.png",
       "discord": "mrdigtal0",
-      "description": "Founder and visionary leader of Unknown Roleplay",
+      "description": "Founder, visionary leader and Lead Developer of Unknown Roleplay",
       "badge": "FOUNDER",
       "status": "active"
     },
