@@ -584,11 +584,11 @@
   ],
   "team": [
     {
-      "id": "john-doe",
-      "name": "John 'Boss' Doe",
+      "id": "mr-digital",
+      "name": "Mr. Digital",
       "role": "Server Owner",
-      "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop",
-      "discord": "bigboss",
+      "avatar": "https://files.fivemerr.com/images/7497611d-67ab-4100-b633-9204855c3d81.png",
+      "discord": "mrdigtal0",
       "description": "Founder and visionary leader of Unknown Roleplay",
       "badge": "FOUNDER",
       "status": "active"
